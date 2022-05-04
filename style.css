@@ -333,21 +333,27 @@ details[open]{
         background: linear-gradient(180deg, rgba(29,29,29,0) 0%, rgba(29,29,29,1) 25%, rgba(29,29,29,1) 100%);
         top: 560px;
     }
+    @media (min-width: 1200px) {
+        #BC_fade_up {
+            top: 70vh;
+        }
+    }
     #BC_IMG {
         background-image: url("IMG/PC2.png");
         position: absolute;
         aspect-ratio: 16/9 ;
         height: auto;
         top: 60px;
-        width: 1200px;
+        min-width: 1200px;
+        width: 80vw;
         right: 0;
     }
 
 
     #info {
-
         width: 100%;
-        height: 800px;
+        min-height: 800px;
+        height: fit-content;
         background-color: #dc8224;
         margin-top: 80px;
         display: inline-block;
