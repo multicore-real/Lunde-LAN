@@ -1,0 +1,464 @@
+
+body {
+    background: rgb(29,29,29);
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+
+#menu {
+    box-shadow: 0 0 30px #2a2a2a;
+    margin: 0;
+    height: 150px;
+    width: 100%;
+    background-color: #2a2a2a;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu p {
+    color: #F0F0F0;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 15px;
+    aspect-ratio: 1;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    cursor: pointer;
+}
+
+
+#BC_fade {
+    background: rgb(29,29,29);
+    background: linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(29,29,29,1) 75%, rgba(29,29,29,0) 100%);
+    position: absolute;
+    height: 1300px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+#BC_fade_up {
+    background: rgb(29,29,29);
+    background: linear-gradient(180deg, rgba(220,129,35,0) 0%, rgba(220,129,35,1) 25%, rgb(220,129,35,1) 100%);
+    position: absolute;
+    height: 700px;
+    top: 2150px;
+    z-index: 1;
+    width: 100%;
+}
+
+#BC_IMG {
+    background-image: url(" IMG/VR.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 900px;
+    position: absolute;
+    width: 100vw;
+    height: 1500px;
+}
+
+#section1 {
+    text-align: center;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    z-index: 2;
+}
+
+#cover {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    margin-top: 300px;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+    color: #F0F0F0;
+    width: 80vw;
+}
+.header p{
+    margin-top: 20px;
+    font-size: 5vw;
+}
+
+
+.Button {
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: #1D1D1D;
+    margin-top: 50px;
+    font-size: 50px;
+    height: 120px;
+    width: 270px;
+    cursor: pointer;
+    border-radius: 70px;
+    background-image: linear-gradient(90deg, rgba(253,194,0,1) 0%, rgba(253,194,0,1) 100%);
+}
+
+.Button:hover {
+    transform: scale(1.05);
+}
+
+.menu-stuff {
+    display: none;
+    padding: 0 10px;
+    margin-left: 50px !important;
+}
+
+
+footer {
+    font-size: 3.5vw;
+    height: 200px;
+    z-index: 10;
+    position: relative;
+    color: #F0F0F0;
+    background-color: #171717;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    height: 7vw;
+    aspect-ratio: 1;
+    margin: 0;
+    bottom: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+footer img {
+    position:absolute;
+    height: 7vw;
+    z-index: 10;
+}
+
+
+#info {
+    width: 100%;
+    height: 1500px;
+    background-color: #dc8224;
+    margin-top: 450px;
+    display: inline-block;
+    position: relative;
+    color: #F0F0F0;
+    z-index: 3;
+    font-size: 20px;
+}
+
+#info h1{
+    font-size: 9vw;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#info p {
+    font-size: 5vw;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#program {
+    transition: 0.1s;
+    margin-top: 50px;
+    background-color: rgb(29,29,29);
+    padding-bottom: 100px;
+    color: rgb(29,29,29);
+}
+
+#program details{
+    margin: auto;
+    width: 80vw;
+    min-height: 130px;
+}
+#program summary{
+    height: 130px;
+    cursor: pointer;
+    font-size: 5vw !important;
+}
+
+#program summary p{
+    display: inline-block;
+    margin-top: 5vw;
+    font-size: 6vw !important;
+}
+
+#program summary u{
+    margin-top: 3vw;
+    display: inline-block;
+    position: absolute;
+    right: calc(10vw + 30px);
+    font-size: 6vw !important;
+}
+
+#program details p{
+    font-size: 4.5vw;
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.S1 {
+    background-color: #da964e;
+
+}
+.S1 summary{
+    background-color: #dc8224;
+}
+
+
+.S2 {
+    background-color: #e7a222;
+}
+.S2 summary{
+    background-color: #fdc200;
+}
+
+details {
+    transition: 0.2s;
+}
+
+details[open]{
+    transition: all 0.2s;
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+}
+
+
+
+@media (min-width: 1000px) {
+
+    #section1 {
+        text-align: left;
+    }
+
+    #cover {
+        text-align: left;
+        justify-content: left;
+        margin-left: 10vw;
+    }
+
+    .header{
+        width: 500px;
+        text-align: left;
+        font-size: 62px;
+        margin-top: 230px;
+        margin-bottom: 0;
+    }
+    .header p{
+        font-size: 40px !important;
+    }
+    .Button {
+        display: none;
+    }
+
+    #menu p {
+        font-weight: normal;
+        margin: 0;
+        font-size: 22px;
+    }
+
+    #menu {
+        height: 60px;
+        justify-content: normal;
+    }
+    #logo{
+        width: 45px;
+        position: relative;
+
+    }
+
+    #lan-menu {
+        display: none;
+    }
+
+    .menu-stuff {
+        display: inline-block;
+        cursor: pointer;
+        background-image: linear-gradient(
+                to right,
+                #fdc200,
+                #fdc200 50%,
+                #F0F0F0 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-stuff:hover::before {
+        width: 100%;
+    }
+
+    .menu-stuff:hover {
+        background-position: 0;
+    }
+
+    .menu-stuff:before {
+        content: '';
+        background: #fdc200;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #BC_fade {
+        display: none;
+    }
+    #BC_fade_up {
+        background: linear-gradient(180deg, rgba(29,29,29,0) 0%, rgba(29,29,29,1) 25%, rgba(29,29,29,1) 100%);
+        top: 560px;
+    }
+    #BC_IMG {
+        background-image: url("IMG/PC2.png");
+        position: absolute;
+        aspect-ratio: 16/9 ;
+        height: auto;
+        top: 60px;
+        width: 1200px;
+        right: 0;
+    }
+
+
+    #info {
+
+        width: 100%;
+        height: 800px;
+        background-color: #dc8224;
+        margin-top: 80px;
+        display: inline-block;
+        position: relative;
+        color: #F0F0F0;
+        z-index: 3;
+        font-size: 20px;
+    }
+
+    #info h1{
+        font-size: 4vw;
+        margin: 40px 20vw;
+    }
+
+    #img-info {
+        content:url("IMG/sofa_man.jpg");
+        float: right;
+        display: inline-block;
+        width: 32vw;
+        margin-right: 8vw;
+        border: #2b2c2a solid 6px;
+        box-shadow: 0 0 10px #2b2c2a;
+    }
+
+    #info p {
+        font-size: 1.6vw;
+        width: 32vw;
+        margin-left: 8vw;
+    }
+
+    footer {
+        font-size: initial;
+        height: 100px;
+        z-index: 10;
+        position: relative;
+        color: #F0F0F0;
+    }
+
+    footer img {
+        margin-top: 20px;
+        margin-right: 20px;
+        height: 30px;
+        aspect-ratio: 1;
+    }
+
+    #program {
+        transition: 0.1s;
+        margin-top: 50px;
+        background-color: rgb(29,29,29);
+        height: 400px;
+        color: rgb(29,29,29);
+    }
+
+    #program details{
+        margin: auto;
+        width: 80vw;
+        min-height: 80px;
+    }
+    #program summary{
+        height: 80px;
+        cursor: pointer;
+        font-size: 30px !important;
+    }
+
+    #program summary p{
+        display: inline-block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 30px !important;
+    }
+
+    #program summary u{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: inline-block;
+        position: absolute;
+        right: calc(10vw + 20px);
+        font-size: 30px !important;
+    }
+
+    #program details p{
+        font-size: 20px;
+        margin-left: 20px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .S1 {
+        background-color: #da964e;
+
+    }
+    .S1 summary{
+        background-color: #dc8224;
+    }
+
+
+    .S2 {
+        background-color: #e7a222;
+    }
+    .S2 summary{
+        background-color: #fdc200;
+    }
+
+    details {
+        transition: 0.2s;
+    }
+
+    details[open]{
+        transition: all 0.2s;
+        margin-top: 20px!important;
+        margin-bottom: 20px!important;
+    }
+}
