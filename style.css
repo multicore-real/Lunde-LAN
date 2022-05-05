@@ -189,12 +189,22 @@ footer b {
     margin-bottom: 100px;
 }
 
+#img-info {
+    display: none;
+}
+
 #program {
     transition: 0.1s;
     margin-top: 50px;
     background-color: rgb(29,29,29);
     padding-bottom: 100px;
     color: rgb(29,29,29);
+}
+
+#program h1 {
+    text-align: center;
+    color: #F0F0F0;
+    font-size: 40px;
 }
 
 #program details{
