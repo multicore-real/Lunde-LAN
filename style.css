@@ -127,9 +127,14 @@ footer {
     position: relative;
     color: #F0F0F0;
     background-color: #171717;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
+    padding: 20px;
     margin: 0;
 }
 
@@ -144,8 +149,14 @@ footer a {
 
 footer img {
     position:absolute;
-    height: 7vw;
+    bottom: 0;
+    right: 0;
     z-index: 10;
+    height: 10vw;
+}
+
+footer b {
+    color: #fdc200;
 }
 
 
@@ -154,6 +165,7 @@ footer img {
     height: 1500px;
     background-color: #dc8224;
     margin-top: 450px;
+    height: fit-content;
     display: inline-block;
     position: relative;
     color: #F0F0F0;
@@ -171,6 +183,12 @@ footer img {
     font-size: 5vw;
     width: 80vw;
     margin-left: 10vw;
+}
+
+#info video{
+    width: 100vw;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
 #program {
@@ -368,6 +386,13 @@ details[open]{
         margin: 40px 20vw;
     }
 
+    #info video{
+        width: 70vw;
+        margin-left: 15vw;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
     #img-info {
         content:url("IMG/sofa_man.jpg");
         float: right;
@@ -403,7 +428,7 @@ details[open]{
         transition: 0.1s;
         margin-top: 50px;
         background-color: rgb(29,29,29);
-        height: 400px;
+        min-height: 400px;
         color: rgb(29,29,29);
     }
 
