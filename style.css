@@ -59,7 +59,6 @@ body {
 
 #BC_IMG {
     background-image: url(" IMG/VR.jpg");
-    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     top: 900px;
@@ -163,7 +162,7 @@ footer b {
 #info {
     width: 100%;
     background-color: #dc8224;
-    margin-top: 450px;
+    margin-top: 700px;
     height: fit-content;
     display: inline-block;
     position: relative;
@@ -316,7 +315,6 @@ details[open]{
         );
         background-size: 200% 100%;
         background-position: -100%;
-        display: inline-block;
         position: relative;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
