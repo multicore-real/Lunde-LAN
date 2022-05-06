@@ -209,27 +209,32 @@ footer b {
 
 #program details{
     margin: auto;
-    width: 80vw;
+    width: 90vw;
     min-height: 130px;
 }
 #program summary{
-    height: 130px;
+    min-height: 130px;
+    height: fit-content;
     cursor: pointer;
-    font-size: 5vw !important;
+    font-size: 5.5vw !important;
+}
+
+p span {
+    display: block;
 }
 
 #program summary p{
     display: inline-block;
     margin-top: 5vw;
-    font-size: 6vw !important;
+    font-size: 5vw !important;
 }
 
 #program summary u{
     margin-top: 3vw;
     display: inline-block;
     position: absolute;
-    right: calc(10vw + 30px);
-    font-size: 6vw !important;
+    right: calc(5vw + 30px);
+    font-size: 5vw !important;
 }
 
 #program details p{
@@ -445,9 +450,14 @@ details[open]{
         min-height: 80px;
     }
     #program summary{
+        min-height: 80px;
         height: 80px;
         cursor: pointer;
         font-size: 30px !important;
+    }
+
+    p span {
+        display: inline-block;
     }
 
     #program summary p{
