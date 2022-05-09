@@ -4,8 +4,8 @@ $("#logo").click(function () {
 $(".info-click").click(function () {
     document.getElementById("info").scrollIntoView({behavior: "smooth"});
 })
-$(".kjøp-click").click(function () {
-    document.getElementById("cover").scrollIntoView({behavior: "smooth"});
+$(".kjop-click").click(function () {
+    document.getElementById("kjop").scrollIntoView({behavior: "smooth"});
 })
 $(".program-click").click(function () {
     document.getElementById("program").scrollIntoView({behavior: "smooth"});

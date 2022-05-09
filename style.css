@@ -204,7 +204,7 @@ footer b {
 #program h1 {
     text-align: center;
     color: #F0F0F0;
-    font-size: 40px;
+    font-size: 7.5vw;
 }
 
 #program details{
@@ -271,6 +271,35 @@ details[open]{
     margin-bottom: 20px!important;
 }
 
+#kjop {
+    width: 100%;
+    background-color: rgb(29,29,29);
+    color: #F0F0F0;
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#kjop button{
+    cursor: pointer;
+    color: rgb(29,29,29);
+    font-size: 7vw;
+    height: 7vh;
+    aspect-ratio: 2.5;
+    background-color: #fdc200;
+    border: none;
+    border-radius: 20px;
+}
+
+a:link {
+    color: #fdc200;
+
+}
+
+a:visited {
+    color: #fdc200;
+
+}
 
 
 @media (min-width: 1000px) {
@@ -444,6 +473,10 @@ details[open]{
         color: rgb(29,29,29);
     }
 
+    #program h1 {
+        font-size: 60px;
+    }
+
     #program details{
         margin: auto;
         width: 80vw;
@@ -508,5 +541,10 @@ details[open]{
         transition: all 0.2s;
         margin-top: 20px!important;
         margin-bottom: 20px!important;
+    }
+
+    #kjop button{
+        height: 70px;
+        font-size: 40px;
     }
 }
