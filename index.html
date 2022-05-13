@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Lunde LAN</title>
     <link rel="stylesheet" href="style.css">
-    <link href="php.php">
     <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -26,7 +25,7 @@
         <p id="lan-menu">Lunde LAN</p>
         <p class="menu-stuff info-click">Info</p>
         <p class="menu-stuff program-click">Program</p>
-        <p class="menu-stuff kjop-click">Kjøp</p>
+        <p class="menu-stuff kjop-click">Bestill</p>
     </div>
 
     <section id="section1">
@@ -42,7 +41,7 @@
         </div>
         <button class="Button info-click">Info</button>
         <button class="Button program-click" style="margin-left: 5vw">Program</button>
-        <button class="Button kjøp-click" style="margin-left: 5vw">Kjøp</button>
+        <button class="Button kjøp-click" style="margin-left: 5vw">Bestill</button>
     </section>
     <div id="BC_fade"></div>
     <div id="BC_IMG"></div>
@@ -113,28 +112,13 @@
     </section>
     <section id="kjop">
         <a href="https://www.checkin.no/event/44163/lundelan"><button>Kjøp</button></a>
-        <!--
-        <div id="checkin_registration"></div>
-        -->
-</section>
+    </section>
 <footer>
     <p><b>Foto:</b> Anna Monstad</p>
     <p><b>Web:</b> Elias Heggernes</p>
     <a href="https://www.instagram.com/lundelan2022/" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="instagram img"></a>
 </footer>
-    <div id="checkin_registration"></div>
-    <script>
-        (function(w, d) {
-            d.event_id = 44163;
-            let headTag = d.getElementsByTagName('head')[0];
-            let script = d.createElement('script');
-            script.src = 'https://cors-anywhere.herokuapp.com/https://registration.checkin.no/registration.loader.js';
-            script.async = 1;
-            script.crossOrigin = 1;
-            headTag.appendChild(script);
-        })(window, document);
-    </script>
 <script src="JS/Javascript.js"></script>
 </body>
 </html>
